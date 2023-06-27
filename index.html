@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>willian</title>
+   <h1 style="color: rgb(255, 0, 0);">QUEM É MINHA GATINHA?</h1>
+   
+  
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            height: 100vh;
+             
+              background-color: #00000063; /* Cor de fundo modificada */
+        }
+        
+        
+        h1 {
+            font-size: 55px;
+            text-align: left;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 33px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 20px 33px;
+            background-color: rgba(255, 0, 0, 0.774);
+            color: #fff;
+            text-decoration: none;
+            font-size:34px;
+            border-radius: 22px;
+            border: none;
+            cursor: pointer;
+            margin: 66px;
+        }
+            .button-container.moved {
+            flex-direction: column;
+        }
+        
+        .button-container.moved .button {
+            margin: 99px;
+        }
+    </style>
+    <script>
+        function moveButtons() {
+            var buttonContainer = document.querySelector('.button-container');
+            buttonContainer.classList.add('moved');
+        }
+    </script>
+        
+  
+</head>
+
+   
+    <div class="button-container">
+        <a href="pagina2.html" class="button" style="color: rgb(0, 0, 0);">EU</a>
+       
+        <a href="#" class="button no-button" onclick="moveButtons()" style="color: rgb(0, 0, 0);">SUMIU</a>
+    </div>
+</head>
+
+
+</html>
